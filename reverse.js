@@ -1,4 +1,4 @@
-const reverse = (string) => {
+/* const reverse = (string) => {
 	let splitArray = string.split('');
 	let reversedString = '';
 
@@ -21,32 +21,28 @@ const assertEqual = function (actual, expected) {
 
 assertEqual(reverse('hello'), 'olleh');
 assertEqual(reverse('1'), '1');
-assertEqual(reverse('fish'), 'hsif');
+assertEqual(reverse('fish'), 'hsif'); */
 
-/* 
-const args = process.argv;
+const args = process.argv.slice(2);
 // console.log(args);
-const theArray = args.slice(2);
 
-const reverse = (theArray) => {
-
-	let reversedArray = [];
+const reverse = (args) => {
 	let reversedString = '';
 
-	for (item of theArray) {
+	for (item of args) {
 		for (let i = item.length - 1; i >= 0; i--) {
 			reversedString += item[i];
 		}
-		reversedArray.push(reversedString);
+		console.log(reversedString);
 		reversedString = '';
 	}
-
-	return reversedArray;
 };
+
+reverse(args);
 
 // console.log(reverse(['hello', 'goodbye']));
 
-const assertEqual = function (actual, expected) {
+/* const assertEqual = function (actual, expected) {
 	if (actual === expected) {
 		console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
 	} else {
@@ -54,9 +50,9 @@ const assertEqual = function (actual, expected) {
 	}
 	// console.log(actual);
 	// console.log(expected);
-};
+}; */
 
-assertEqual(reverse(args), ['olleh', 'eybdoog']); */
+// reverse(args), ['olleh', 'eybdoog'];
 
 // node reverse.js hello goodbye
 // olleh
