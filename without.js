@@ -1,4 +1,4 @@
-const without = (source, itemsToRemove) => {
+/* const without = (source, itemsToRemove) => {
 	// create a duplicate source so the original array does not get modified
 	let result = source.slice();
 	// console.log(result);
@@ -15,6 +15,7 @@ const without = (source, itemsToRemove) => {
 	console.log('source2', source);
 	return result;
 };
+ */
 
 // create an empty array and push the items into it (so splice would not work)
 // could use .filter and push
@@ -26,8 +27,13 @@ const without = (source, itemsToRemove) => {
 //find the number itself == itemsToRemove[i] -> this goes in findIndex
 //result.findIndex()  -> get index and instead of j put in the index
 
+const without = function (source, itemsToRemove) {
+	newArray = source.filter((item) => !itemsToRemove.includes(item));
+	return newArray;
+};
+
 //test case for checking if the original array was modified
 const words = ['hello', 'world', 'lighthouse'];
-console.log('words1', words);
+// console.log('words1', words);
 console.log('function', without(words, ['lighthouse']));
-console.log('words2', words);
+// console.log('words2', words);
