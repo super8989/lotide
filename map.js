@@ -1,5 +1,6 @@
 const words = ['ground', 'control', 'to', 'major', 'tom'];
 
+//1.
 // Map words into a new array using
 const map = function (array, callback) {
 	const results = [];
@@ -13,7 +14,7 @@ const results1 = map(words, (word) => word);
 // console.log(results1);
 
 //
-//
+//2.
 // Return an array of string lengths of a given array
 const stringLength = (string) => {
 	return string.length;
@@ -28,7 +29,7 @@ const map2 = words.map(stringLength);
 // console.log(map2);
 
 //
-//
+// Testing
 // check if 2 arrays are equal -> returns true/false
 const eqArrays = (arr1, arr2) => {
 	// console.log(arr1, arr2);
