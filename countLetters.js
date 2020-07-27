@@ -1,4 +1,4 @@
-const input = 'LHL';
+const input = 'lighthouse in the house';
 
 const countLetters = (string) => {
 	let result = {};

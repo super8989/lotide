@@ -1,3 +1,4 @@
+// check if 2 arrays are equal -> returns true/false
 const eqArrays = (arr1, arr2) => {
 	// console.log(arr1, arr2);
 
@@ -12,11 +13,12 @@ const eqArrays = (arr1, arr2) => {
 	return false;
 };
 
+//accept an argument true or false
 const assertArraysEqual = (input) => {
 	if (input) {
-		console.log(`The two arrays are equal.`);
+		console.log(`✅ The two arrays are equal.`);
 	} else {
-		console.log(`The arrays are not equal.`);
+		console.log(`🛑 The arrays are not equal.`);
 	}
 };
 
