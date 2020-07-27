@@ -1,5 +1,4 @@
-const input = 'lighthouse in the house';
-
+// return a count of each of the letters in that sentence.
 const countLetters = (string) => {
 	let result = {};
 	let joinString = string.split(' ').join('');
@@ -15,15 +14,4 @@ const countLetters = (string) => {
 	return result;
 };
 
-const resultObj = countLetters(input);
-
-const assertEqual = function (actual, expected) {
-	if (actual === expected) {
-		console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-	} else {
-		console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-	}
-};
-
-assertEqual(resultObj['L'], 2);
-assertEqual(resultObj['H'], 1);
+module.exports = countLetters;

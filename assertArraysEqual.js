@@ -1,4 +1,4 @@
-//accept an argument true or false
+// accept an argument and prints whether true or false
 const assertArraysEqual = (input) => {
 	if (input) {
 		console.log(`✅ The two arrays are equal.`);
